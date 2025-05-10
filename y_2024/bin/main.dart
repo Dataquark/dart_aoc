@@ -1,5 +1,12 @@
-import 'package:y_2024/y_2024.dart' as y_2024;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${y_2024.calculate()}!');
+import 'package:y_2024/puzzle_01/solution.dart' as solution;
+
+
+void main() {
+
+    final inp = File('./lib/puzzle_01/input/input.txt');
+    final s = solution.Solution(inp);
+    print(s);
 }
+
